@@ -49,6 +49,7 @@
 
         marker = L.marker([lat, lng]).addTo(map);
         //console.log(marker)
+
         circle = L.circle([lat, lng], { // [51.505, -0.09] // To place circle in a specific, different location
             color: 'green',
             fillColor: 'red',
@@ -56,7 +57,8 @@
             radius : 500 // in pixels
         }).addTo(map);
         //console.log(circle)
-        // Adds marker to the map and a circle for accuracy
+
+        // Adds marker to the map and a circle for accuracy radius
 
         if (!zoomed) {
             zoomed = map.fitBounds(circle.getBounds()); 
